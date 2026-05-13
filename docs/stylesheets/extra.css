@@ -108,14 +108,17 @@
 }
 
 .slide-preview-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.15rem;
+  display: block;
+  clear: both;
+  width: 100%;
+  max-width: 980px;
   margin: 1rem 0 2rem;
 }
 
 .slide-preview-card {
-  margin: 0;
+  display: block;
+  width: 100%;
+  margin: 0 0 1.15rem;
   border: 1px solid #d6e0ec;
   border-radius: 16px;
   overflow: hidden;

@@ -157,7 +157,7 @@ def build_pages(page_counts: dict[int, int]) -> None:
 
 ## PPT 在线预览
 
-        {pdf_block(slide, f"第{lesson:02d}讲 PPT", lesson, page_counts.get(lesson, 0))}
+{pdf_block(slide, f"第{lesson:02d}讲 PPT", lesson, page_counts.get(lesson, 0))}
 
 ## 对应教材章节
 

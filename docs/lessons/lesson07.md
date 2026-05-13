@@ -14,7 +14,7 @@
 
 ## PPT 在线预览
 
-        <div class="resource-actions">
+<div class="resource-actions">
   <a class="md-button md-button--primary" href="../../assets/slides/lesson07.pdf" target="_blank">下载 PDF</a>
   <a class="md-button" href="../../assets/slides/lesson07.pdf" target="_blank">新窗口打开</a>
 </div>
