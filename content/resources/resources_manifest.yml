@@ -1,0 +1,40 @@
+- title: 软件体系结构课程电子教材学生版 v5.1
+  category: textbook
+  file: assets/textbook/software_architecture_textbook_student_v5_1.pdf
+  preview_type: pdf
+  public: true
+  description: 第1-8章完整电子教材 PDF，用于下载、打印和离线阅读。
+  source: textbook/output
+  note: 网页正文版见 docs/textbook/。
+- title: 教材附图图库
+  category: figures
+  file: assets/figures/textbook/
+  preview_type: gallery
+  public: true
+  description: 第1-8章教材图示，用于复习核心框架和工程流程。
+  source: textbook/figures_fixed
+  note: 图片仅为教材公开图示，不含教师命题材料。
+- title: 课程过程材料
+  category: process
+  file: assets/process/
+  preview_type: markdown
+  public: true
+  description: 课程大纲、学生画像和公开考核说明等过程材料。
+  source: input/
+  note: 不包含教师评分细则。
+- title: 课程项目模板
+  category: templates
+  file: assets/downloads/templates/
+  preview_type: download
+  public: true
+  description: M1-M4 项目阶段可填写模板。
+  source: site generated
+  note: 学生可下载使用。
+- title: 参考教材书目
+  category: references
+  file: assets/references/reference_books.md
+  preview_type: markdown
+  public: true
+  description: 课程推荐参考书目信息，不放未授权电子书 PDF。
+  source: course bibliography
+  note: 只发布书目信息和学习建议。

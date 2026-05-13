@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+Thumbs.db
+
+# MkDocs local cache
+.cache/
+
+# Keep generated build out of source commits; GitHub Actions rebuilds it.
+build/
+
+# Local serve logs
+review/mkdocs_serve_stdout.log
+review/mkdocs_serve_stderr.log

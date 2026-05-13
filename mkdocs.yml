@@ -1,0 +1,87 @@
+site_name: 软件体系结构课程网站
+site_description: 《软件体系结构》学生端课程学习平台
+site_author: 何庭钦
+docs_dir: docs
+site_dir: build
+use_directory_urls: true
+not_in_nav: |
+  assets/**/*.md
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: orange
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - 首页: index.md
+  - 课程说明: syllabus.md
+  - 电子教材:
+      - 教材首页: textbook/index.md
+      - 第1章: textbook/chapter01.md
+      - 第2章: textbook/chapter02.md
+      - 第3章: textbook/chapter03.md
+      - 第4章: textbook/chapter04.md
+      - 第5章: textbook/chapter05.md
+      - 第6章: textbook/chapter06.md
+      - 第7章: textbook/chapter07.md
+      - 第8章: textbook/chapter08.md
+  - 课程课件:
+      - 课件总览: lessons/index.md
+      - 第1讲: lessons/lesson01.md
+      - 第2讲: lessons/lesson02.md
+      - 第3讲: lessons/lesson03.md
+      - 第4讲: lessons/lesson04.md
+      - 第5讲: lessons/lesson05.md
+      - 第6讲: lessons/lesson06.md
+      - 第7讲: lessons/lesson07.md
+      - 第8讲: lessons/lesson08.md
+  - 课后作业:
+      - 作业总览: assignments/index.md
+      - 第1讲作业: assignments/lesson01_assignment.md
+      - 第2讲作业: assignments/lesson02_assignment.md
+      - 第3讲作业: assignments/lesson03_assignment.md
+      - 第4讲作业: assignments/lesson04_assignment.md
+      - 第5讲作业: assignments/lesson05_assignment.md
+      - 第6讲作业: assignments/lesson06_assignment.md
+      - 第7讲作业: assignments/lesson07_assignment.md
+      - 第8讲作业: assignments/lesson08_assignment.md
+  - 课程项目:
+      - M1 选题与需求: project/m1.md
+      - M2 建模与结构表达: project/m2.md
+      - M3 架构决策与 ADR: project/m3.md
+      - M4 测试交付与运维: project/m4.md
+  - 补充资料:
+      - 资源中心: resources/index.md
+      - 教材附图: resources/textbook_figures.md
+      - 过程产物: resources/process_artifacts.md
+      - 模板文件: resources/templates.md
+      - 参考书目: resources/reference_books.md
+  - 复习说明: review/final_review_guide.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  generator: false
