@@ -54,8 +54,11 @@ def build_pages() -> list[str]:
     for lesson in range(1, 9):
         title = LESSON_TITLES[lesson]
         body = load_assignment(lesson)
-        txt = f"../assets/assignments/lesson{lesson:02d}_assignment.txt"
-        md = f"../assets/assignments/lesson{lesson:02d}_assignment.md"
+        # These links are emitted as raw HTML, so MkDocs will not rewrite them.
+        # Assignment pages are served at /assignments/<page>/, hence ../../assets.
+        txt = f"../../assets/assignments/lesson{lesson:02d}_assignment.txt"
+        md_file = f"lesson{lesson:02d}_assignment.md"
+        md = f"../../assets/assignments/lesson{lesson:02d}_assignment.md.txt"
         page = f"lesson{lesson:02d}_assignment.md"
         rows.append(f"| [第{lesson:02d}讲作业]({page}) | {title} |")
         write(
@@ -89,7 +92,7 @@ def build_pages() -> list[str]:
 ## 下载原始文件
 
 <div class="resource-actions">
-  <a class="md-button" href="{md}" target="_blank">下载 Markdown</a>
+  <a class="md-button" href="{md}" download="{md_file}" target="_blank">下载 Markdown</a>
   <a class="md-button" href="{txt}" target="_blank">下载 TXT</a>
 </div>
 """,

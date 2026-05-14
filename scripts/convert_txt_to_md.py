@@ -36,10 +36,14 @@ def copy_assignment_sources() -> list[str]:
         title = f"# 第{lesson:02d}讲课后作业\n\n"
         body = "\n".join(line for line in text.splitlines() if not line.startswith("# ")).strip()
         md_name = f"lesson{lesson:02d}_assignment.md"
+        raw_md_name = f"lesson{lesson:02d}_assignment.md.txt"
         txt_name = f"lesson{lesson:02d}_assignment.txt"
-        write(ASSETS / "assignments" / md_name, title + (body or text.strip()))
+        markdown_text = title + (body or text.strip())
+        write(ASSETS / "assignments" / md_name, markdown_text)
+        write(ASSETS / "assignments" / raw_md_name, markdown_text)
         write(ASSETS / "assignments" / txt_name, body or text.strip())
         generated.append(f"assets/assignments/{md_name}")
+        generated.append(f"assets/assignments/{raw_md_name}")
     return generated
 
 

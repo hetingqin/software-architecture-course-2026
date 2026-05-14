@@ -27,6 +27,6 @@
 ## 下载原始文件
 
 <div class="resource-actions">
-  <a class="md-button" href="../assets/assignments/lesson03_assignment.md" target="_blank">下载 Markdown</a>
-  <a class="md-button" href="../assets/assignments/lesson03_assignment.txt" target="_blank">下载 TXT</a>
+  <a class="md-button" href="../../assets/assignments/lesson03_assignment.md.txt" download="lesson03_assignment.md" target="_blank">下载 Markdown</a>
+  <a class="md-button" href="../../assets/assignments/lesson03_assignment.txt" target="_blank">下载 TXT</a>
 </div>
