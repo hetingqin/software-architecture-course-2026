@@ -201,7 +201,7 @@ def build_reference_books() -> None:
 def build_resources_pages() -> None:
     figures = sorted((ASSETS / "figures" / "textbook").rglob("*.png"))
     figure_cards = "\n".join(
-        f'<div class="figure-card"><img src="../assets/figures/textbook/{p.relative_to(ASSETS / "figures" / "textbook").as_posix()}" alt="{p.stem}"><p>{p.stem}</p></div>'
+        f'<div class="figure-card"><img src="../../assets/figures/textbook/{p.relative_to(ASSETS / "figures" / "textbook").as_posix()}" alt="{p.stem}"><p>{p.stem}</p></div>'
         for p in figures
     )
     process_files = sorted((ASSETS / "process").glob("*"))
